@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  *{
+    box-sizing: border-box;
+  }
+  body {
+      font-family:verdana,geneva,Tahoma,sans-serif;
+
+      margin:15px 30px;
+      font-size: 17px;
+      padding: 8px;
+
+
+    }
+    .container{
+      background-color: #B1E1FF;
+      padding:5px 25px 15px 30px;
+      border:1px solid lightgray;
+      border-radius: 4px;
+
+    }
+       input[type="submit"]{
+      background-color:black;
+      color:white;
+      padding: 12px 20px;
+      border:none;
+      width:100%;
+    }
+      input[type="submit"]:hover{
+        background-color: purple;
+      }
+       input[type="text"]{
+        width: 100%;
+      padding:10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      }
+  </style>
+<body>
+  <div class="container">
+    <form action="/" method="POST">
+        <h1 class="main-heading"><center>Heart Disease Predict System</center></h1>
+        <h2>Patient Information</h2>
+        <label>Enter the age</label>
+        <input type="text" name="user_input" id="user_input">
+        <br>
+        <label>Enter the Sex</label>
+
+        <input type="text" name="user_input1" id="user_input1">
+        <br>
+        <label>Enter the Cp</label>
+        <input type="text" name="user_input2" id="user_input2">
+        <br>
+        <label>Enter the trestbps</label>
+        <input type="text" name="user_input3" id="user_input3">
+        <br>
+        <label>Enter the chol</label>
+        <input type="text" name="user_input4" id="user_input4">
+        <br>
+        <label>Enter the fbs</label>
+        <input type="text" name="user_input5" id="user_input5">
+        <br>
+        <label>Enter the restecg</label>
+        <input type="text" name="user_input6" id="user_input6">
+        <br>
+        <label>Enter the thalach</label>
+        <input type="text" name="user_input7" id="user_input7">
+        <br>
+        <label>Enter the exang</label>
+        <input type="text" name="user_input8" id="user_input8">
+        <br>
+        <label>Enter the oldpeak</label>
+        <input type="text" name="user_input9" id="user_input9">
+        <br>
+        <label>Enter the slope</label>
+        <input type="text" name="user_input10" id="user_input10">
+        <br>
+        <label>Enter the ca</label>
+        <input type="text" name="user_input11" id="user_input11">
+        <br>
+        <label>Enter the thal</label>
+        <input type="text" name="user_input12" id="user_input12">
+        <p>
+              <input type="submit" value="Submit">
+            </p>
+    </form>
+    <p style="color:red">{{data}}</p>
+</body>
+</html>
