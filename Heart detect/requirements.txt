@@ -1,4 +1,3 @@
-flask
-numpy
-pandas
-gunicorn
+flask==0.11
+jinja==2.8
+gunicorn==19.6.0
